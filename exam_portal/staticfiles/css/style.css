@@ -1,0 +1,23 @@
+
+* {
+    padding:0;
+    margin:0;
+}
+
+nav {
+    background-color: #34495e;
+}
+
+.menu {
+    width: 100%;
+    height: 30px;
+    background: #34495e;
+}
+.menu a:hover {
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 5px royalblue solid;
+}
+#dev-name, #dev-name:hover {
+    color: crimson;
+} 

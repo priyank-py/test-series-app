@@ -1,0 +1,18 @@
+<header>
+    <section class=" row logo display-3 mx-3 my-2">
+        <i class="fa fa-compass mr-3 mt-2" aria-hidden="true"></i>
+        <span>ExamStuff</span>
+    </section>
+    <nav class="menu my-3 py-4 d-flex justify-content-end align-items-center">
+        <ul class="d-flex list-unstyled my-2 mr-3">
+            <li class="mr-3"><a href="{% url 'home' %}">Home</a></li>
+            <li class="mr-3"><a href="{% url 'about' %} ">About</a></li>
+            <li class="mr-3"><a href="{% url 'contact' %}">Contact Us</a></li>
+            {% if user.username %}
+            <li class="mr-3"><a href="{% url 'admin:logout' %}">Sign out</a></li>
+            {% else %}
+            <li class="mr-3"><a href="{% url 'admin:login' %}">Sign in</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>

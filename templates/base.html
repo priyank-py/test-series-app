@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<!--Font-Awesome-CDN-->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!--Custom CSS-->
+ <link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+<!--Bootstrap-->
+    <link rel="stylesheet" href="{% static 'css\bootstrap_light.min.css' %}">
+    
+    <style>
+        nav {
+    background-color: #34495e;
+        }
+
+        .menu {
+            width: 100%;
+            height: 30px;
+            background: #34495e;
+        }
+        .menu a:hover {
+            text-decoration: none;
+            padding-bottom: 8px;
+            border-bottom: 5px royalblue solid;
+        }
+        #dev-name, #dev-name:hover {
+        color: crimson;
+} 
+    </style>
+
+    {% block title %}
+    {% endblock title %}
+
+</head>
+
+<body>
+
+    {% include 'partials/_header.html' %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% include 'partials/_footer.html' %}
+
+</body>
+
+</html>
